@@ -21,7 +21,7 @@
 ### Registers
 
 * rA, 1 word
-* rX, 1 wrod
+* rX, 1 word
 * rJ, 2 bytes, positiVe
 * rIi, i = [1|2|3|4|5|6], 1 sign + 2 byte
 
