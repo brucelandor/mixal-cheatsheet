@@ -129,11 +129,15 @@ SLA, SRA, SLAX, SRAX, SLC, SRC, SLB, SRB.
 
 ## MIXAL assembly language
 
+> In an instruction, (mod)|(L:R) choose the memory  
+> cell fields to be operated on.
+
 ### MIXAL structure
 
 ```mixal
 * comment
 [LABEL] MNEMONIC [OPERAND] [COMMENT]
+L   OPCODE M,I(MOD) comment
 ```
 
 ### MIXAL directive
@@ -142,3 +146,8 @@ SLA, SRA, SLAX, SRAX, SLC, SRC, SLB, SRB.
 2. `EQU`
 3. `CON`
 4. `END`
+
+### Expressions
+
+1. w-expression
+2. A stand-alone asterisk denotes the current memory location.
