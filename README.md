@@ -28,13 +28,13 @@
 ### Memory
 
 * 4000 cell, 0~3999
-* 1 cell = 1 world
+* 1 cell = 1 word
 
 ### Other
 
-1. OV oVerflow toggle
-2. CM comparison indicator, L, E, G
-3. I/O deVices, un, n = [0~20]
+1. OV, overflow toggle
+2. CM, comparison indicator, L, E, G
+3. I/O, deVices, un, n = [0~20]
 
 ## Operators
 
