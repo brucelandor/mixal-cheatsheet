@@ -106,7 +106,7 @@ JiN, JiZ, JiP, JiNN, JiNZ, JiNP.
 2. `IN M(mod)`
 3. `IOC`
 4. `JRED M(mod) jump to M if ready`
-5. JBUS M(mod) jump to M if busy`
+5. `JBUS M(mod) jump to M if busy`
 
 ### Conversion operators
 
