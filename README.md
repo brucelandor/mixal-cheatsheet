@@ -40,6 +40,9 @@
 
 ### Loading operators
 
+> On partial loading, the sign is used if it is part of the fields, otherwise  
+> \+ is used.
+
 1. `LDA rA <- V`
 2. `LDX rX <- V`
 3. `LDi rIi <- V`
@@ -49,12 +52,12 @@
 
 ### Storing operators
 
-> LSB of Value in register to M(L:R)
+> The number of bytes is taken from the right-hand of the register.
 
 1. `STA rA -> M`
 2. `STX rX -> M`
-3. `STi rIi -> M`
-4. `STJ rJ -> M`
+3. `STi rIi -> M` +/- 0 0 0 m n
+4. `STJ rJ -> M` the sign is always \+.
 5. `STZ 0 -> M`
 
 ### Arithmetic operators
@@ -115,7 +118,8 @@ JiN, JiZ, JiP, JiNN, JiNZ, JiNP.
 
 ### Shift operators
 
-> shift command does not affect the sign.
+> shift command does not affect the sign.  
+> M specifies the number of MIX bytes to be shifted.
 
 ```code
 SLA, SRA, SLAX, SRAX, SLC, SRC, SLB, SRB.
@@ -123,7 +127,7 @@ SLA, SRA, SLAX, SRAX, SLC, SRC, SLB, SRB.
 
 ### Miscellaneous operators.
 
-1. `MOVE Move MOD words from M to location stored in rI1`
+1. `MOVE MOVE M(mod), Move MOD words from M to location stored in rI1`
 2. `NOP`
 3. `HLT`
 
