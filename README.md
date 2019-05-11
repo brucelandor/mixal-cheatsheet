@@ -57,7 +57,7 @@
 1. `STA rA -> M`
 2. `STX rX -> M`
 3. `STi rIi -> M` +/- 0 0 0 m n
-4. `STJ rJ -> M` the sign is always \+.
+4. `STJ rJ -> M` the sign is always \+, stores contents(rJ) into the address part of contents(M).
 5. `STZ 0 -> M`
 
 ### Arithmetic operators
@@ -125,11 +125,11 @@ JiN, JiZ, JiP, JiNN, JiNZ, JiNP.
 SLA, SRA, SLAX, SRAX, SLC, SRC, SLB, SRB.
 ```
 
-### Miscellaneous operators.
+### Miscellaneous operators
 
 1. `MOVE MOVE M(mod), Move MOD words from M to location stored in rI1`
 2. `NOP`
-3. `HLT`
+3. `HLT` halt the execution.
 
 ## MIXAL assembly language
 
@@ -149,7 +149,8 @@ L   OPCODE M,I(MOD) comment
 1. `ORIG`
 2. `EQU`
 3. `CON`
-4. `END`
+4. `END` end the compilation.
+5. `ALF`
 
 ### Expressions
 
