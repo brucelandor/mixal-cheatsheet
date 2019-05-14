@@ -16,7 +16,7 @@
 `V = [M](mod)|(L:R), mod = L*8 + R`
 
 1 byte = 6 bit  
-1 word = 1 sign + 5 word
+1 word = 1 sign + 5 byte
 
 ### Registers
 
