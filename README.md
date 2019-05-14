@@ -151,6 +151,7 @@ L   OPCODE M,I(MOD) comment
 3. `CON`
 4. `END` end the compilation.
 5. `ALF`
+6. Literial constant. `=N=`, `LDA =N=` is equivalent t to `LDA con1; con1 con N`
 
 ### Expressions
 
