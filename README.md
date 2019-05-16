@@ -127,7 +127,7 @@ SLA, SRA, SLAX, SRAX, SLC, SRC, SLB, SRB.
 
 ### Miscellaneous operators
 
-1. `MOVE MOVE M(mod), Move MOD words from M to location stored in rI1`
+1. `MOVE`, `MOVE M(mod)` Move MOD words from M to location stored in rI1, increase rI1 by mod.
 2. `NOP`
 3. `HLT` halt the execution.
 
