@@ -146,12 +146,14 @@ L   OPCODE M,I(MOD) comment
 
 ### MIXAL directive
 
-1. `ORIG`
-2. `EQU`
-3. `CON`
-4. `END` end the compilation.
-5. `ALF`
-6. Literial constant. `=N=`, `LDA =N=` is equivalent t to `LDA con1; con1 con N`
+1. `ORIG` Sets the value of the memory address to which following instructions will be allocated  
+   after compilation.
+2. `EQU` Used to define a symbol’s value.
+3. `CON` The value of the given expression is copied directly into the current memory address.
+4. `END` Its operand gives the start address for program execution.
+5. `ALF` Takes as operand five characters, constituting the five bytes of a word which is copied  
+   directly into the current memory address.
+6. Literial constant. `=N=`, `LDA =N=` is equivalent t to `LDA con1; con1 con N`.
 
 ### Expressions
 
