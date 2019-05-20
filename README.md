@@ -147,7 +147,8 @@ L   OPCODE M,I(MOD) comment
 ### MIXAL directive
 
 1. `ORIG` Sets the value of the memory address to which following instructions will be allocated  
-   after compilation.
+   after compilation. A symbol appearing in the LOC field of and ORIG line gets its equivalent the  
+   value of `location counter` before it has changed.
 2. `EQU` Used to define a symbol’s value.
 3. `CON` The value of the given expression is copied directly into the current memory address.
 4. `END` Its operand gives the start address for program execution.
